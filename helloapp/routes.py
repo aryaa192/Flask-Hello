@@ -3,7 +3,7 @@ from helloapp import app, render_template,redirect,url_for
 
 @app.route('/')
 def hello():
-    return render_template('index.html', title='Welcome to the homepage.', user='Aniket')
+    return render_template('index.html', title='Welcome to the homepage.')
 
 @app.route("/user/<username>/")
 def hello_user(username):
